@@ -1,3 +1,5 @@
+![Owl](owl-head-ash.png)
+
 # AshNazg
 
 - Often I find myself using strings to start my search for bad when doing malware/host analysis.
