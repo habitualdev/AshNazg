@@ -9,8 +9,9 @@
   - \<STRING> : \<LINE NUMBER\>.\<STRING IN LINE NUMBER\>
   - Ex: The string "IamBAD" on line 306, the third identified string in that line would be IamBAD:306.3
   - Data is structured as such to inform follow on searchs
-
-
+\n
+\n
+\n
 Requirements:
 - Local redis DB accessible at 127.0.0.1 on the default port
 - redis python library installed
