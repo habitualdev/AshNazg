@@ -6,6 +6,6 @@
 
 - AshNazg dumps everything into a redis database.
 - Data structure is as follows:
-  - <STRING> : <LINE NUMBER>.<STRING IN LINE NUMBER>
+  - \<STRING> : \<LINE NUMBER\>.\<STRING IN LINE NUMBER\>
   - Ex: The string "IamBAD" on line 306, the third identified string in that line would be IamBAD:306.3
   - Data is structured as such to inform follow on searchs
