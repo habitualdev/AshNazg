@@ -13,6 +13,9 @@ def main():
         elif session.current_command == "find":
             os.system('cls' if os.name == 'nt' else 'clear')
             print(session.find())
+        elif session.current_command == "load_os":
+            os.system('cls' if os.name == 'nt' else 'clear')
+            session.load_os(session.sliced_line[1])
         elif session.current_command == "wipe":
             os.system('cls' if os.name == 'nt' else 'clear')
             session.wipe()

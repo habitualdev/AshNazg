@@ -17,14 +17,13 @@ class Session:
 
     def welcome(self):
         print("Welcome to the one stringser to find them all")
-        print("Commands:\nfind - Search through the DB \nload - Load a new file into the DB \nexit - Exit the script \nwipe - Exit and clear the DB\n\n")
+        print("Commands:\nfind - Search through the DB \nload - Load a new file into the DB \nexit - Exit the script \nwipe - Clear the DB\n\n")
         raw_line = input(">>> ")
         self.sliced_line = raw_line.split()
         self.current_command = self.sliced_line[0]
 
-
     def load(self, path):
-        stringser.load_strings(str(path))
+        stringser.load_strings_os(str(path))
         self.current_command = "next"
 
     def next(self):
@@ -40,3 +39,4 @@ class Session:
     def wipe(self):
         self.server.wipe_redis()
         self.current_command = "next"
+

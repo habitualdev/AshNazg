@@ -2,7 +2,7 @@ import os
 import readline
 import re
 
-COMMANDS = ['find','load','exit','wipe']
+COMMANDS = ['find','load', 'load_os','exit','wipe']
 RE_SPACE = re.compile('.*\s+$', re.M)
 
 

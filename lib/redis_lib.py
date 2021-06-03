@@ -35,10 +35,14 @@ class Server:
     def search(self, term):
         term_match = re.compile(".*" + term + ".*", re.IGNORECASE)
         result = []
+        return_obj = []
         for key in self.r.scan_iter():
             matches = term_match.findall(key.decode("utf-8"))
             for each in matches:
                 result.append(each)
-        return result
+        for result_slice in result:
+            result_value = self.r.get(result_slice)
+            return_obj.append(str(result_value) + ":" + str(result_slice))
+        return return_obj
 
 
