@@ -3,7 +3,7 @@ import os
 import ascii_owl
 
 def main():
-    print(ascii_owl.owl)
+    print(ascii_owl.owl())
     session = ctl.Session()
     os.system('cls' if os.name == 'nt' else 'clear')
     session.welcome()
