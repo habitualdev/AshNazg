@@ -6,7 +6,7 @@
 -This means waitng on strings itself, then waiting on grep to do it's buisness.
 - So what if we keep everything in memory?
 - AshNazg dumps everything into a redis database.
-
+- dist contains a compile pyBinary. Confirmed working on ubuntu.
 # Requirements
 - Local redis DB accessible at 127.0.0.1 on the default port
 - redis python library installed
