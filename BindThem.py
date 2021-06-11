@@ -1,9 +1,8 @@
 import lib.ctl as ctl
 import os
-import ascii_owl
+
 
 def main():
-    ascii_owl.owl()
     session = ctl.Session()
     os.system('cls' if os.name == 'nt' else 'clear')
     session.welcome()

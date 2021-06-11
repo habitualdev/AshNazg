@@ -16,6 +16,7 @@ class Session:
         self.sliced_line = ""
 
     def welcome(self):
+        cli.owl()
         print("Welcome to the one stringser to find them all")
         print("Commands:\nfind - Search through the DB \nload - Load a new file into the DB \nexit - Exit the script \nwipe - Clear the DB\n\n")
         raw_line = input(">>> ")
