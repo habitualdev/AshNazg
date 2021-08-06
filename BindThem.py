@@ -1,6 +1,7 @@
 import lib.ctl as ctl
 import os
 
+# Calls the rest of the script
 
 def main():
     session = ctl.Session()
