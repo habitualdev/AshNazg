@@ -10,3 +10,4 @@
 # Requirements
 - Local redis DB accessible at 127.0.0.1 on the default port
 - redis python library installed
+- Lots of processing power to be useful
